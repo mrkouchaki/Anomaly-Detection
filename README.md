@@ -8,7 +8,7 @@ This project provides an RNN autoencoder for anomaly detection in time-series sa
 
 - `data/`: Contains the data files used for training and testing.
 - `src/`: Contains the source code for data generation, model training, anomaly detection, and plotting.
-- `jammer/`: Contains the code for running the jammer.
+- `attack_scenario/`: Contains the code for running attacks.
 - `README.md`: Provides an overview and instructions for the project.
 - `requirements.txt`: Lists the Python dependencies required to run the project.
 
