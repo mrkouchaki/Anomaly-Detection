@@ -34,7 +34,7 @@ This project provides an RNN autoencoder for anomaly detection in time-series sa
 
 ### Usage
 
-1. **Running the Jammer:**
+1. **Running the Attack:**
     - Navigate to the `attack_scenario` directory:
     ```sh
     cd attack_scenario
@@ -59,7 +59,7 @@ This project provides an RNN autoencoder for anomaly detection in time-series sa
     - Configure the `config.yaml` file to set up the attack type, power, etc. Example `config.yaml`:
         ```yaml
         ---
-         # The options below are applicable to all jammer types
+         # The options below are applicable to all attack types
          # Select Frequency operating range (1=2.4GHz, 2=5GHz) | default = 1
          band: 1
          # Select Jammer Type (1=constant, 2=sweeping, 3=random channel hopping) | default = 1
