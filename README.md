@@ -1,8 +1,8 @@
-# RNN Autoencoder for Anomaly Detection in 5G Network
+# First Model : RNN Autoencoder for Anomaly Detection in Communication Network
 
 ## Overview
 
-This project provides an RNN autoencoder for anomaly detection in time-series IQ samples from a 5G network. The primary goal is to detect jamming attacks by analyzing reconstruction errors from the autoencoder model. The code includes data loading, preprocessing, model training, and anomaly detection steps.
+This project provides an RNN autoencoder for anomaly detection in time-series samples from a 5G network. The primary goal is to detect attacks by analyzing reconstruction errors from the autoencoder model. The code includes data loading, preprocessing, model training, and anomaly detection steps.
 
 ## Project Structure
 
@@ -35,12 +35,12 @@ This project provides an RNN autoencoder for anomaly detection in time-series IQ
 ### Usage
 
 1. **Running the Jammer:**
-    - Navigate to the `jammer` directory:
+    - Navigate to the `attack_scenario` directory:
     ```sh
-    cd jammer
+    cd attack_scenario
     ```
 
-    - Ensure you have UHD installed and an SDR (e.g., USRP) connected and powered on. To install UHD on Ubuntu, use the following commands:
+    - Ensure you have UHD installed and an SDR connected and powered on. To install UHD on Ubuntu, use the following commands:
 
     ```sh
     # Install dependencies
@@ -56,7 +56,7 @@ This project provides an RNN autoencoder for anomaly detection in time-series IQ
     uhd_find_devices
     ```
 
-    - Configure the `config.yaml` file to set up the jamming type, frequency, power, etc. Example `config.yaml`:
+    - Configure the `config.yaml` file to set up the attack type, power, etc. Example `config.yaml`:
         ```yaml
         ---
          # The options below are applicable to all jammer types
@@ -84,13 +84,13 @@ This project provides an RNN autoencoder for anomaly detection in time-series IQ
          allocation: 1 # This option only applies to 5GHz band
         ```
 
-    - Run the `jammer.py` script to start the jamming process:
+    - Run the `jam.py` script to start the attack process:
     ```sh
-    python jammer.py
+    python jam.py
     ```
 
 2. **Generate, Save, and Prepare your data:**
-    - After setting up the 5G network and starting the jammer based on the configured setup, set the frequency and other parameters based on your 5G network settings.
+    - After setting up the network and starting the jammer based on the configured setup, set parameters based on your network settings.
     - Navigate to the `data` directory:
     ```sh
     cd data
@@ -101,7 +101,7 @@ This project provides an RNN autoencoder for anomaly detection in time-series IQ
     python data_generate.py
     ```
 
-    - Save your `.dat` or `.csv` files containing IQ samples in the `data/` directory.
+    - Save your `.dat` or `.csv` files containing samples in the `data/` directory.
     - Ensure your `.dat` files are formatted as binary files containing 32-bit floating-point numbers.
 
 3. **Training the Model:**
