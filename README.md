@@ -1,4 +1,4 @@
-# First Model : RNN Autoencoder for Anomaly Detection in Communication Network
+# First Model : RNN Autoencoder for Anomaly Detection in a Simulated Communication Network
 
 ## Overview
 
