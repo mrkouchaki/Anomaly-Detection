@@ -3,11 +3,6 @@
 
 #
 # SPDX-License-Identifier: GPL-3.0
-#
-# GNU Radio Python Flow Graph
-# Title: Not titled yet
-# Author: Abubakar Sani Ali
-# GNU Radio version: 3.8.1.0
 
 ###################################################################################
 # Importing Libraries
