@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides an RNN autoencoder for anomaly detection in time-series samples from a 5G network. The primary goal is to detect attacks by analyzing reconstruction errors from the autoencoder model. The code includes data loading, preprocessing, model training, and anomaly detection steps.
+This project provides an RNN autoencoder for anomaly detection in time-series samples from a simulated communication network. The primary goal is to detect attacks by analyzing reconstruction errors from the autoencoder model. The code includes data loading, preprocessing, model training, and anomaly detection steps.
 
 ## Project Structure
 
